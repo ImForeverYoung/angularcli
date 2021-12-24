@@ -1,0 +1,32 @@
+
+<div class="wrapper">
+  <div style="background-color: #212939">
+    <div class="logo"></div>
+    <div class="navigation">
+      <div class="account">
+        <img src="https://fury.visurel.com/assets/img/avatars/default.jpg" alt="" width="72px" height="72px">
+
+
+        <h4>David Smith</h4>
+        <h5>david.smith@example.com</h5>
+        <div class="nav_icons"></div>
+      </div>
+      <div class="nav-item">APPS</div>
+      <div class="nav-item" (click)="navigateToDashboard()">Dashboard</div>
+      <div class="nav-item" (click)="navigateToAllinonetable()">All-In-One Table</div>
+      <div class="nav-item" (click)="navigateToCalendar()">Calendar</div>
+      <div class="nav-item">Inbox</div>
+      <div class="nav-item">Chat</div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main_nav"></div>
+
+    <div class="main_content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+
+</div>
+
